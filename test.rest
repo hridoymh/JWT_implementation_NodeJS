@@ -1,0 +1,25 @@
+GET http://localhost:4081/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWVoZWRpIiwiaWF0IjoxNjg0NDAyOTE2LCJleHAiOjE2ODQ0MDI5NzZ9.Na7VFFbfNW_GDamUCEVpF1RSXIzH7hwnNSef7HlQrRg
+###
+POST http://localhost:4080/login
+Content-Type: application/json
+
+{
+    "username":"mehedi"
+}
+
+###
+POST http://localhost:4080/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWVoZWRpIiwiaWF0IjoxNjg0NDAyNzY0fQ.DEpb21IK_iie5of-TdCysmgh_7lhsChZH-G2tgerSZ0"
+}
+
+###
+POST  http://localhost:4080/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWVoZWRpIiwiaWF0IjoxNjg0NDAyNzY0fQ.DEpb21IK_iie5of-TdCysmgh_7lhsChZH-G2tgerSZ0"
+}
